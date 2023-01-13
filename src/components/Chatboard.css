@@ -23,4 +23,12 @@
 cursor: pointer;
 
 }
+@media screen and (max-width:678px){*
+    .chat_bot_form{
+        width: 95%;
+        margin: auto;
+    }
+
+    
+}
 
