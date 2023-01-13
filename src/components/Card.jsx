@@ -12,7 +12,7 @@ function Card() {
         <div className='card'> 
     <img src={data.image} alt="news" />
     <p>
-      {data.p1.substring(0,30)}...  <Link to={`/${data.id}`}>Read more</Link>
+      {data.p1.substring(0,100)}...  <Link to={`/${data.id}`}>Read more</Link>
     </p>
     </div>
       ))
