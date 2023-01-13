@@ -2,8 +2,8 @@ import React from 'react'
 import  {data} from './database.jsx'
 import { useParams,Link } from 'react-router-dom'
 import './newsdetail.css'
-import Header from './header.jsx'
-import Footer from './footer.jsx'
+import Header from './Header.jsx'
+import Footer from './Footer.jsx'
 
 function Newsdetail() {
     let {id}=useParams();
