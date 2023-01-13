@@ -1,14 +1,23 @@
 import React from 'react'
 import News from '../assets/News.jpg'
+import  {data} from './database.jsx'
 import "./Card.css"
+import {Link} from 'react-router-dom'
+console.log(data)
 function Card() {
   return (
-    <div className='card'> 
-    <img src={News} alt="news" />
+    <>
+    {
+      data.map(data=>(
+        <div className='card'> 
+    <img src={data.image} alt="news" />
     <p>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae pariatur qui voluptatibus rem illo reprehenderit, voluptates labore debitis ipsam repellendus... <a href="">Read more</a>
+      {data.p1.substring(0,30)}...  <Link to={`/${data.id}`}>Read more</Link>
     </p>
     </div>
+      ))
+    }
+    </>
   )
 }
 

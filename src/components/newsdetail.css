@@ -1,0 +1,20 @@
+.news_detail{
+    width: 80%;
+    margin: auto;
+}
+.news__image{
+    width: 80%;
+    margin: auto;
+}
+.news__image>img{
+    width: 100%;
+    height: auto;
+}
+.background{
+    background-color: gray;
+}
+button{
+    margin-bottom: 20px;
+}
+
+

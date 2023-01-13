@@ -4,6 +4,7 @@ import About from "./components/About";
 import Article from "./components/Article";
  
 import Home from "./components/Home";
+import Newsdetail from "./components/Newsdetail";
 import Publish from "./components/Publish";
  
 function App(){
@@ -15,6 +16,7 @@ function App(){
             <Route exact path="/about" element={<About />} />
             <Route exact path="/article" element={<Article/>} />
             <Route exact path="/publish" element={<Publish/>} />
+            <Route exact path="/:id" element={<Newsdetail />} />
         </Routes>
            
         </div>
