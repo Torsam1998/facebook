@@ -1,0 +1,26 @@
+.chat_bot_form{
+    background-color: darkgray;
+    flex-direction: column;
+    border: 2pc solid darkslategray;
+    display: flex;
+    width: 350px;
+}
+.chat_bot_form>input,textarea{
+    margin: 20px 20px;
+    border: 1px solid darkslategray;
+    border-radius: 20px;
+    
+    
+}
+.chat_bot_form>input{
+    padding: 10px;
+}
+.chatbot{
+    width: 70px;
+}
+.chatbot>img{
+    width: 100%;
+cursor: pointer;
+
+}
+
