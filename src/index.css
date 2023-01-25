@@ -78,8 +78,29 @@ position: relative;
  .text__h1::first-letter{
     font-size: 4rem;
  }
+ .mobile{
+    position: absolute;
+    top: 35px;
+    right: 15px;
+    font-size: 30px;
+    color: white;
+ }
+ .mobile_view>ul{
+ display: flex;
+ flex-direction: column;
+ text-align: center;
+ background-color: rgb(85, 68, 179);
+ margin: 10px;
+ padding: 20px;
+ }
+.view_point{
+color: aliceblue;
+background-color: rgb(65, 114, 149);
+width: 100%;
+margin: auto;
 
-@media screen and (min-width:678px){
+}
+@media screen and (max-width:678px){
     .logo{
         width: 90px;
         
@@ -94,9 +115,19 @@ position: relative;
         width: 100%;
         margin: auto;
     }
+    nav>ul{
+        display: none;
+    }
+
     /* .text_h1{
 padding:  200px;
 color: aqua;
     } */
     
+}
+
+@media screen  and (min-width: 1024px){
+    .mobile{
+        display: none;
+    }
 }

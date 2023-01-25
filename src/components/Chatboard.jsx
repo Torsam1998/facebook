@@ -6,7 +6,7 @@ import moving_bot from '../assets/moving__bot.gif'
 function Chatboard() {
     const [akuOpenDoor, setAkuOpenDoor]=useState(false);
 const openDoor = ()=>{
-    setAkuOpenDoor(true)
+    setAkuOpenDoor(prev=>!prev)
 }
 
 const closeDoor =()=>{
